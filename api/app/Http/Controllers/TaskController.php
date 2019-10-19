@@ -24,7 +24,7 @@ class TaskController extends Controller
         $task->update($request->all());
         return $task;
     }
-
+    
     public function delete(Request $request, $id) {
         $task = Task::findOrFail($id);
         $task->delete();
