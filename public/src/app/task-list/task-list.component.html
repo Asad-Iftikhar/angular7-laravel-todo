@@ -24,8 +24,8 @@
             <td>{{task.id}}</td>
             <td>{{task.title}}</td>
             <td>
-              <span class="edit" routerLink="/task-edit/{{task.id}}">Edit</span>
-              <span class="delete" (click)="deletetask(task.id)">Delete</span>
+              <span class="btn btn-success edit" routerLink="/task-edit/{{task.id}}">Edit</span>
+              <span class="btn btn-danger delete" (click)="deleteTask(task.id)">Delete</span>
             </td>
           </tr>
         </tbody>

@@ -21,6 +21,7 @@ export class TaskCreateComponent implements OnInit {
 
   addTask(dataTask) {
     this.restApi.createTask(this.task).subscribe((data: {}) => {
+      console.log("here");
       this.router.navigate(['/task-list'])
     })
   }

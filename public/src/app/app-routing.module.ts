@@ -8,7 +8,7 @@ import { TaskUpdateComponent } from './task-update/task-update.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'create-task' },
   { path: 'create-task', component: TaskCreateComponent },
-  { path: 'list-task', component: TaskListComponent },
+  { path: 'task-list', component: TaskListComponent },
   { path: 'task-edit/:id', component: TaskUpdateComponent },
 ];
 
